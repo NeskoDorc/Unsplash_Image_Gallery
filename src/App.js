@@ -37,7 +37,7 @@ function getPhotos(){
   console.log(data)
    const imagesFromApi=data.results ?? data;
 
-   if(page==1) setImages(imagesFromApi)
+   if(page===1) setImages(imagesFromApi)
    setImages(images =>[...images, ...imagesFromApi])
  })
 
